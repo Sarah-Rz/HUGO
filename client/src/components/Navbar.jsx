@@ -14,7 +14,7 @@
 } from '@chakra-ui/react';
  import {Link as ReactLink} from 'react-router-dom';
  import {HamburgerIcon, CloseIcon, MoonIcon, SunIcon} from '@chakra-ui/icons';
- import {SiStylelint} from 'react-icons/si';
+ import {SiKingstontechnology} from 'react-icons/si';
 
  const links = [
     {linkName: 'Products', path: '/products'},
@@ -46,12 +46,12 @@
             <HStack>
                 <Link as={ReactLink} to='/'>
                     <Flex>
-                        <Icon as={SiStylelint} h={6} w={6}/>
+                        <Icon as={SiKingstontechnology} h={6} w={6} color='green.500'/>
                         <Text 
                         fontWeight='bold' 
-                        color='red.700'
+                        color={useColorModeValue('gray.900', 'gray.100')}
                         >
-                            HUGO
+                            Technolife
                         </Text>
                     </Flex>
                 </Link>
@@ -87,8 +87,8 @@
                 m={2} 
                 fontSize='sm' 
                 fontWeight={600}
-                _hover={{ bg: 'red.700' }}
-                bg='red.800' 
+                _hover={{ bg: 'green.400' }}
+                bg='green.500' 
                 color='white'
                 >
                     Sign Up
