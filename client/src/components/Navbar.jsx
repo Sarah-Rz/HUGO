@@ -78,7 +78,7 @@
                 fontWeight={400} 
                 variant='link'
                 >
-                    Sign In
+                    Login
                 </Button>  
                 <Button 
                 as={ReactLink} 
