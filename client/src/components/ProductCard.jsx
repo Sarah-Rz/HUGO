@@ -13,7 +13,7 @@ import {
      HStack, 
      Text,
 } from '@chakra-ui/react';
-import { FiShoppingCart } from 'react-icons/fi';
+import { TiShoppingCart } from 'react-icons/ti';
 import { Link as ReactLink } from 'react-router-dom';
 import { StarIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
@@ -96,7 +96,7 @@ const ProductCard = ({product}) => {
         {product.stock > 0 && (  
         <Tooltip label='Add to cart' bg='green.100' placement='top' color='gray.800' fontSize='1em'>  
           <Button variant='ghost' display='flex'>
-            <Icon as={FiShoppingCart} h={6} w={6} alignSelf='center' color='green.300'/>
+            <Icon as={TiShoppingCart} h={7} w={7} alignSelf='center' color='green.300'/>
           </Button>
         </Tooltip> 
         )}   
